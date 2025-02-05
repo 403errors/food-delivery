@@ -29,9 +29,20 @@ const StoreContextProvider = (props) => {
         return totalAmount;
     }
 
+    const url = "http://localhost:4000"
+    const [token, setToken] = useState("");
+
     // useEffect(() => {
     //     console.log(cartItems);
     // }, [cartItems])
+
+
+    // fixing the logout on reload
+    useEffect(() => {
+        if (localStorage.getItem("token")) {
+            setToken(localStorage.getItem("token"))
+        }
+    }, [])
 
     const contextValue = {
         food_list,
@@ -39,8 +50,12 @@ const StoreContextProvider = (props) => {
         setCartItems,
         addToCart,
         removeFromCart,
-        getTotalCartAmount
+        getTotalCartAmount,
+        url,
+        token,
+        setToken
     }
+
 
     return (
         <StoreContext.Provider value={contextValue}>
