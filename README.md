@@ -36,12 +36,12 @@ This project is a food delivery application built using the MERN stack (MongoDB,
 *   **Status:** ✅ Completed
 *   **Description:** Developing the server-side logic using Node.js and Express.js to handle API requests and business logic.
 
-### Phase 7: MongoDB Atlas Setup for Backend (Upcoming)
-*   **Status:** ⏳ Upcoming
+### Phase 7: MongoDB Atlas Setup for Backend (Completed)
+*   **Status:** ✅ Completed
 *   **Description:** Setting up a MongoDB Atlas database to store and manage application data in the cloud.
 
-### Phase 8: Admin Panel Development with React (Upcoming)
-*   **Status:** ⏳ Upcoming
+### Phase 8: Admin Panel Development with React (Completed)
+*   **Status:** ✅ Completed
 *   **Description:** Creating an admin panel using React.js to manage application content, users, and orders.
 
 ### Phase 9: User Login and Registration (Upcoming)
