@@ -32,8 +32,8 @@ This project is a food delivery application built using the MERN stack (MongoDB,
 *   **Status:** ✅ Completed
 *   **Description:** Developed a place order page to finalize orders, review details, and confirm purchases.
 
-### Phase 6: Backend Implementation (Upcoming)
-*   **Status:** ⏳ Upcoming
+### Phase 6: Backend Implementation (Completed)
+*   **Status:** ✅ Completed
 *   **Description:** Developing the server-side logic using Node.js and Express.js to handle API requests and business logic.
 
 ### Phase 7: MongoDB Atlas Setup for Backend (Upcoming)
