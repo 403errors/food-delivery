@@ -2,6 +2,14 @@
 
 This project is a food delivery application built using the MERN stack (MongoDB, Express.js, React.js, Node.js). This document tracks the project's progress through different phases.
 
+## Screenshots
+### Home-Page
+![Home Page Screenshot](./frontend/imgs/screenshot.png)
+### Menu-Page
+![Menu Page Screenshot](./frontend/imgs/screenshot-2.png)
+### Order-Page
+![Order Page Screenshot](./frontend/imgs/screenshot-3.png)
+
 ## Project Timeline
 
 ### Phase 1: Frontend Development with React (Completed)
@@ -19,12 +27,10 @@ This project is a food delivery application built using the MERN stack (MongoDB,
 ### Phase 4: Cart Page (Completed)
 *   **Status:** ✅ Completed
 *   **Description:** Created a fully functional cart page allowing users to view, modify, and manage their selected food items.
-    ![Cart Page Screenshot](./frontend/imgs/screenshot.png)
 
 ### Phase 5: Place Order Page (Completed)
 *   **Status:** ✅ Completed
 *   **Description:** Developed a place order page to finalize orders, review details, and confirm purchases.
-    ![Place Order Page Screenshot](./frontend/imgs/screenshot-2.png)
 
 ### Phase 6: Backend Implementation (Upcoming)
 *   **Status:** ⏳ Upcoming
@@ -61,7 +67,6 @@ This project is a food delivery application built using the MERN stack (MongoDB,
 ### Phase 14: Display Orders in Admin Panel (Upcoming)
 *   **Status:** ⏳ Upcoming
 *   **Description:** Implementing functionality in the admin panel to display and manage all user orders.
-    ![Admin Panel Screenshot](./frontend/imgs/screenshot-3.png)
 
 
 ## Technology Stack
