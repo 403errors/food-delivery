@@ -44,8 +44,8 @@ This project is a food delivery application built using the MERN stack (MongoDB,
 *   **Status:** ✅ Completed
 *   **Description:** Creating an admin panel using React.js to manage application content, users, and orders.
 
-### Phase 9: User Login and Registration (Upcoming)
-*   **Status:** ⏳ Upcoming
+### Phase 9: User Login and Registration (Completed)
+*   **Status:** ✅ Completed
 *   **Description:** Implementing complete user login and registration functionalities, connecting the frontend components to the backend services.
 
 ### Phase 10: Fetching Data from Backend to Frontend (Upcoming)
