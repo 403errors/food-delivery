@@ -53,7 +53,7 @@ const registerUser = async (req, res) => {
         }
 
         // hashing user password
-        const salt = await  bcrypt.genSalt(10)  // 5 <= input <= 15 | higher -> more encrypted, more time
+        const salt = await bcrypt.genSalt(10)  // 5 <= input <= 15 | higher -> more encrypted, more time
         const hashedPass = await bcrypt.hash(password, salt)
 
         const newUser = new userModel({
@@ -63,7 +63,7 @@ const registerUser = async (req, res) => {
         })
 
         const user = await newUser.save()
-        const token = createToken(user._id)
+        const token = createToken(user._id) // _id is given by default
 
         res.json({success:true, token})
 

@@ -26,29 +26,64 @@ const Add = ({url}) => {
     //    console.log(data); 
     // }, [data])
 
+
+    // const onSubmitHandler = async (event) => {
+    //     event.preventDefault();
+    //     const formData  = new FormData();
+    //     formData.append("name", data.name)
+    //     formData.append("description", data.description)
+    //     formData.append("price", Number(data.price))
+    //     formData.append("category", data.category)
+    //     formData.append("image", image)
+
+    //     const response = await axios.post(`${url}/api/food/add`, formData);
+    //     if (response.data.success) {
+    //         setData({
+    //             name:"",
+    //             description:"",
+    //             price:"",
+    //             category:"Salad"
+    //         })
+    //         setImage(false)
+    //         toast.success(response.data.message)
+    //     } else {
+    //         toast.error(response.data.message)
+    //     }
+    // }
+
     const onSubmitHandler = async (event) => {
         event.preventDefault();
-        const formData  = new FormData();
-        formData.append("name", data.name)
-        formData.append("description", data.description)
-        formData.append("price", Number(data.price))
-        formData.append("category", data.category)
-        formData.append("image", image)
-
-        const response = await axios.post(`${url}/api/food/add`, formData);
-        if (response.data.success) {
-            setData({
-                name:"",
-                description:"",
-                price:"",
-                category:"Salad"
-            })
-            setImage(false)
-            toast.success(response.data.message)
-        } else {
-            toast.error(response.data.message)
+        
+        const formData = new FormData();
+        
+        // Append all fields from the 'data' object dynamically
+        Object.entries(data).forEach(([key, value]) => {
+            formData.append(key, key === "price" ? Number(value) : value);
+        });
+    
+        // Append the image separately
+        formData.append("image", image);
+    
+        try {
+            const response = await axios.post(`${url}/api/food/add`, formData);
+            if (response.data.success) {
+                setData({
+                    name: "",
+                    description: "",
+                    price: "",
+                    category: "Salad"
+                });
+                setImage(false);
+                toast.success(response.data.message);
+            } else {
+                toast.error(response.data.message);
+            }
+        } catch (error) {
+            toast.error("Something went wrong!");
+            console.error(error);
         }
-    }
+    };
+    
 
 
     return (
